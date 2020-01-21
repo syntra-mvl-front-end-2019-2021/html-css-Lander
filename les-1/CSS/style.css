@@ -1,6 +1,6 @@
 p{
     background-color: cornflowerblue;
-    margin: 50px;
+
 }
 .klasse-1{
     font-family: Arial, Helvetica, sans-serif;
@@ -12,4 +12,11 @@ p{
 }
 body p{
     background-color: yellow;
+}
+p.klasse-1{
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+    border: 2px black solid;
+    
 }
