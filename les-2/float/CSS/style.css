@@ -7,13 +7,24 @@
     font-family: 'Tahoma';
     
 }
+.sectionFloat2{
+    height: 500px;
+    width: 500px;
+    background-color: yellowgreen;
+    float: left;
+    text-align: center;
+    font-family: 'Tahoma';
+    
+}
 .text{
     font-size: 25px;
+
 }
 .img_float{
     width: 500px;
     height: 500px;
 }
+
 .header{
     height: 35px;
     background-color: red;
