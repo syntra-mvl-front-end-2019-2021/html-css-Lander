@@ -20,28 +20,11 @@
     width: 400px;
     border-bottom: solid 2px green ;
 }
-#class-5::first-letter{
+.class-5 span{
     text-transform: uppercase;
     color: green;
     text-decoration: none;
+    display: inline-block;
+    padding-left: 4px;
     margin: auto;
-}
-#class-5{
-    text-transform: uppercase;
-    text-decoration: underline;
-
-    
-}
-
-.class-6{
-    
-}
-.class-7{
-    
-}
-.class-8{
-    
-}
-.class-9{
-    
 }

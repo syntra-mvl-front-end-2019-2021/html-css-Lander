@@ -1,0 +1,54 @@
+.sectionFloat{
+    height: 500px;
+    width: 500px;
+    background-color: yellowgreen;
+    float: right;
+    text-align: center;
+    font-family: 'Tahoma';
+    
+}
+.text{
+    font-size: 25px;
+}
+.img_float{
+    width: 500px;
+    height: 500px;
+}
+.header{
+    height: 35px;
+    background-color: red;
+    padding: 5px;
+}
+.div_float1{
+    background-color: blue;
+    height: 25px;
+    width: 75px;
+    float: left;
+    margin: 5px ;
+
+}
+
+.div_float3{
+    background-color: purple;
+    height: 25px;
+    width: 75px;
+    float: right;
+    margin: 5px ;
+
+}
+.div_float4{
+    background-color: green;
+    height: 25px;
+    width: 75px;
+    float: right;
+    margin: 5px ;
+}
+.div_float5{
+    background-color: yellow;
+    height: 25px;
+    width: 75px;
+    float: right;
+    margin: 5px ;
+
+
+}
