@@ -1,0 +1,42 @@
+.top{
+    line-height: 200px;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    background-color: yellowgreen;
+    float: left;
+}
+.bottom{
+    line-height: 200px;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    background-color: violet ;
+    float: left;
+}
+.left{
+    line-height: 500px;
+    text-align: center;
+    width: 200px;
+    height: 500px;
+    background-color: tomato;
+    float: left;
+}
+.right{
+    line-height: 500px;
+    text-align: center;
+    width: 200px;
+    height: 500px;
+    background-color: yellow;
+    float: right;
+}
+.container{
+    height: 700px;
+    width: 700px;
+    font-size: 2rem;
+    margin: auto;
+    color: grey;
+}
+
+
+
