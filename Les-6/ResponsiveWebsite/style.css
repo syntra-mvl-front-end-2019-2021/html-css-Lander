@@ -36,6 +36,18 @@ header {
 .nav {
     display: flex;
 }
+.nav-mobile{
+    display: none;
+}
+.nav-logo1,
+.nav-logo2,
+.nav-logo3{
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
 
 .nav-item a {
     color: white;
@@ -106,6 +118,7 @@ header {
     width: 1000px;
     margin: auto;
     padding: 0 150px;
+    text-align: center;
 }
 
 .grid {
@@ -180,19 +193,126 @@ header {
     width: calc(((100% - 40px) / 3 * 2) + 20px);
 }
 
-footer {
-    background-color: white;
-} 
-
-@media screen and(max-width: 1000px){
+@media screen and (max-width: 1000px) {
     .top-header,
     .bottom-header,
     .text-banner,
-    .grid{
+    .grid {
         width: 800px;
+    }
+
+    .card-container {
+        width: 824px;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .top-header,
+    .bottom-header,
+    .text-banner,
+    .grid {
+        width: 600px;
+    }
+
+    .card-container {
+        width: 624px;
+    }
+
+    .grid-row {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .grid-row > .grid-item-half,
+    .grid-row > .grid-item-1,
+    .grid-row > .grid-item-2 {
+        width: 100%;
 
     }
+    .grid-item{
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .top-header,
+    .bottom-header,
+    .text-banner,
+    .grid {
+        width: 600px;
+    }
+
+    .card-container {
+        width: 624px;
+    }
+
+    .grid-row {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .grid-row > .grid-item-half,
+    .grid-row > .grid-item-1,
+    .grid-row > .grid-item-2 {
+        width: 100%;
+
+    }
+    .grid-item{
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (max-width: 824px) {
+    .top-header,
+    .bottom-header,
+    .text-banner,
+    .grid {
+        width: 600px;
+    }
+
+    .card-container {
+        width: 624px;
+    }
+
+    .grid-row {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .grid-row > .grid-item-half,
+    .grid-row > .grid-item-1,
+    .grid-row > .grid-item-2 {
+        width: 100%;
+
+    }
+    .grid-item{
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (max-width: 624px) {
+    .top-header,
+    .bottom-header,
+    .text-banner,
+    .grid {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .card-container{
-        width: 824px;
+        width: 100%;
+        display: block;
+
+    }
+
+    
+}
+@media screen and (max-width:565px){
+    .nav{
+        display: none;
+    }
+    .nav-mobile{
+        display: block;
     }
 }
