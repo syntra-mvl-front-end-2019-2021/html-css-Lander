@@ -21,7 +21,7 @@ header{
     padding: 10px;
     border-top: 3px solid #3498db;
     border-radius: 3px;
-    
+  
 }
 .options-link{
     text-decoration: none;
@@ -30,8 +30,8 @@ header{
 }
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr  1fr;
+    
     justify-content: space-between;
     padding: 20px;
     grid-gap: 20px;
@@ -39,35 +39,42 @@ main{
     'left-top mid right-top'
     'left-mid mid right-mid'
     'left-mid mid right-bottom';
+    align-items: start ;
+    
+}
+.sub-grid-1{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 119px 1fr;
+    align-items: start;
+}
+.sub-grid-2{
+    display: grid;
+    grid-gap: 20px;
 }
 section{
     background-color: white;
     overflow: hidden;
-    margin-bottom: 20px;
+    
     border-radius: 3px;
     border-top: 3px solid #3498db ;
     padding: 10px;
     display: block;
     position: relative;
 }
+
 .grid-part-1{
-    grid-area: left-top;
+    grid-area: 1/1/span 1/span 1;
 }
 .grid-part-2{
-    grid-area: left-mid;
+    grid-area: 2/1/span 1/span 1;
 }
 .grid-part-3{
-    grid-area: mid;
+    grid-area: 1/2/span 2/ span 1;
 }
-.grid-part-4{
-    grid-area: right-top;
-}
-.grid-part-5{
-    grid-area: right-mid;
-}
-.grid-part-6{
-    grid-area: right-bottom;
-}
+
+
 .section-img{
     display: block;
     padding: 10px;
@@ -93,7 +100,7 @@ h1,h2{
 @media screen and (max-width:960px){
     main{
         grid-template-columns:  1fr 1fr;
-        grid-template-rows:  1fr 1fr 1fr;
+        
         grid-template-areas: 
         'left-top right-top '
         
@@ -108,7 +115,7 @@ h1,h2{
 @media screen and (max-width:620px){
     main{
         grid-template-columns:  1fr ;
-        grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows:  repeat(6, auto) ;
         grid-template-areas: 
        'left-top'
        'left-mid'
@@ -118,6 +125,10 @@ h1,h2{
        'right-bottom'
         ;
         align-content: center;
+    }
+    .sub-grid-1, .sub-grid-2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
     }
   
 }
