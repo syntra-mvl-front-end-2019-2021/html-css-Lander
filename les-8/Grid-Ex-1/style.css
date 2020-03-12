@@ -1,0 +1,92 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: #34495e;
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    padding: 20px;
+}
+.title{
+    color: white;
+    font-size: 2.6em;
+    text-align: center;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+    border-top: 3px solid #3498db;
+    border-radius: 3px;
+    
+}
+.options-link{
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.4em;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'left-top mid right-top'
+    'left-mid mid right-mid'
+    'left-mid mid right-bottom';
+}
+section{
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border-top: 3px solid #3498db ;
+    padding: 10px;
+    display: block;
+    position: relative;
+}
+.grid-part-1{
+    grid-area: left-top;
+}
+.grid-part-2{
+    grid-area: left-mid;
+}
+.grid-part-3{
+    grid-area: mid;
+}
+.grid-part-4{
+    grid-area: right-top;
+}
+.grid-part-5{
+    grid-area: right-mid;
+}
+.grid-part-6{
+    grid-area: right-bottom;
+}
+.section-img{
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+}
+.profile{
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.info-link{
+    color: #e74c3c;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+    
+}
+
+h1,h2{
+    font-weight: 500;
+    margin: 0 0 15px 0 ;
+}
