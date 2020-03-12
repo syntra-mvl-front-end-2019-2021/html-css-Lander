@@ -90,3 +90,34 @@ h1,h2{
     font-weight: 500;
     margin: 0 0 15px 0 ;
 }
+@media screen and (max-width:960px){
+    main{
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows:  1fr 1fr 1fr;
+        grid-template-areas: 
+        'left-top right-top '
+        
+        'left-mid right-mid'
+        
+        'mid right-bottom'
+        ;
+        align-content: center;
+    }
+  
+}
+@media screen and (max-width:620px){
+    main{
+        grid-template-columns:  1fr ;
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas: 
+       'left-top'
+       'left-mid'
+       'mid'
+       'right-top'
+       'right-mid'
+       'right-bottom'
+        ;
+        align-content: center;
+    }
+  
+}
