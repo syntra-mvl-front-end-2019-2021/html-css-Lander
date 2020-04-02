@@ -1,0 +1,5 @@
+black: #232323
+dark-grey: #7a7a7a
+light-grey: #f4f4f4
+purple: #45489a
+
